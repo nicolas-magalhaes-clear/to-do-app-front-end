@@ -1,14 +1,14 @@
 import React from "react";
-
+import If from './If.jsx'
 
 export default props => {
-
-    <if test={!props.hide}>
+return(
+    <If test={!props.hide}>
         <button className={'btn btn-' + props.style} onClick={props.onClick}>
             <i className={"fa fa-" + props.icon}></i>
         </button>
-    </if>
-
+    </If>
+)
 
 
 
